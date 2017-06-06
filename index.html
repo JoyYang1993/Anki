@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎进入Anki中国</title>
+    <!--支持移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--引入框架-->
+    <link rel="stylesheet" href="frameWork/bootstrap/css/bootstrap.css">
+    <script src="frameWork/jQuery/jquery-2.1.4/jquery.min.js"></script>
+    <script src="frameWork/bootstrap/js/bootstrap.min.js"></script>
+    <!--引入自定义-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/index/logo.png" alt="logo">
+                </a>
+            </div>
+            <!--导航-->
+            <nav class="navAK">
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="#">Anki手册</a></li>
+                    <li><a href="#">记忆库分享</a></li>
+                    <li><a href="#">Anki论坛</a></li>
+                    <li><a href="#">志愿者联盟</a></li>
+                </ul>
+            </nav>
+            <!--登录注册-->
+            <div class="login">
+                <button class="btn btn-primary">
+                    <span><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录&nbsp;</span>
+                    <span><span class="glyphicon glyphicon-registration-mark"></span>&nbsp;注册</span>
+                </button>
+            </div>
+            <!--注册的模态框-->
+            <div class="modal" id="register">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>这是注册页面</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="form-inline">
+                                <div class="form-group">
+                                    <label class="control-label">姓名</label>
+                                    <input type="text" class="form-control" name="username" placeholder="请输入用户名" />
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="control-label">邮箱</label>
+                                    <input type="email" class="form-control" name="email" placeholder="请输入邮箱账号"/>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="control-label">密码</label>
+                                    <input type="password" class="form-control" name="psw" placeholder="请输入密码" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary register">注册</button>
+                            <button class="btn btn-default" id="close">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="content">
+            <!--下载-->
+            <section>
+                <div class="download">
+                    <p>友好智慧的记忆卡片.<br>它让记忆任何东西都变得更加容易！</p>
+                    <button class="btn btn-primary">下载</button>
+                </div>
+            </section>
+            <!--分类-->
+            <section>
+                <div class="classifys">
+                    <div class="classify" id="classify1">
+                        <span id="title1" class="title">它可以记忆任何东西</span><br>
+                        <span class="item">从图片到文字，以及到科学符号，Anki已经覆盖你所要记忆的任何东西。</span>
+                    </div>
+                    <div class="classify">
+                        <span id="title2" class="title">它可以在任意平台上运行</span><br>
+                        <span class="item">它将运行在Windows、Mac、Linux、iOS、Android,以及任何带有网络浏览器的设备上。</span>
+                    </div>
+                    <div class="classify" id="classify3">
+                        <span id="title3" class="title">它将大大提高你的记忆效率</span><br>
+                        <span class="item">他可以智能筛选出你的记忆薄弱环节，把有限的精力仅关注在你可能将要忘记的学习材料上。</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="con">
+                    <div class="conLeft">
+                        <!--关于Anki-->
+                        <div class="about">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h1>关于Anki</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Anki是一个<mark>记忆辅助软件</mark>，他可以让记忆过程变得更加轻松容易，因此，相比传统方法，他更加高效，更加智能。利用它你可以大大降低你的学习时间，或者你可以在同样长的时间里学习更多的内容。</p>
+                                    <p>任何人，如果他需要在日常的生活中记忆东西，都可以从Anki受益。Anki只是提供了一种学习方法，与内容无关，它支持图片、音频、视频以及科学符号，并且这种各领域的支持是无止境的。Anki在不断发展支持任何你能想象得到的只是展现形式。</p>
+                                    <p>
+                                        例如：
+                                        <ul>
+                                            <li>学习一门语言</li>
+                                            <li>用于法律条纹的记忆</li>
+                                            <li>记忆人的名字并和面孔对应起来</li>
+                                            <li>学习和记忆地理学</li>
+                                            <li>背诵长诗</li>
+                                            <li>练习吉他等乐器</li>
+                                        </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--特点-->
+                        <div class="feature">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h1>特点</h1>
+                                </div>
+                                <div class="panel-body">
+                                   Anki的详细特点列表如下：
+                                </div>
+                                <div id="feature"></div>
+                                <table class="table" hidden="hidden">
+                                    <tr>
+                                        <td>#</td>
+                                        <td class="td2">特点</td>
+                                        <td>详细介绍</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-cloud"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-search"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-eye-open"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-tint"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="glyphicon glyphicon-cloud-download"></span></td>
+                                        <td class="td2"></td>
+                                        <td class="td3"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--介绍视频-->
+                    <div class="conRight">
+                        <div class="panel panel-primary" >
+                            <div class="panel-heading">
+                                <h1>介绍视频</h1>
+                            </div>
+                            <div class="panel-body">
+                                通过点击视频缩略图可以跳转到相关视频
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                    <td><a href="#"><img src="images/index/video.png" alt="视频缩略图"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
+    <footer>
+        <div class="footer">
+            <span>国际官方网站:www.ankisrs.net</span><br>
+            <span>开发支持:Anki中国志愿者协会</span><br>
+            <span>备室登记：豫ICP备14022941号</span>
+        </div>
+    </footer>
+</body>
+</html>
